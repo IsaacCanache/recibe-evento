@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Print OIDC token
         run: 
-          echo '$ACTIONS_ID_TOKEN_REQUEST_TOKEN'
+          echo $ACTIONS_ID_TOKEN_REQUEST_TOKEN
       
        
