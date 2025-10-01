@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print OIDC token
+        run: 
+          echo "${ACTIONS_ID_TOKEN_REQUEST_TOKEN}"
+      
+       
